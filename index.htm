@@ -11,33 +11,26 @@
 
 <body>
 	<h1>momless browser</h1>
-	<p>
-		Instructions:
-		insert an website that you want to use hiddent and a website (or image) you want to switch to
-		press the start button to begain
-	</p>
+	<div>
+		<p>
+			Instructions:
+			insert an website that you want to use hiddent and a website (or image) you want to switch to
+			press the start button to begain
+		</p>
 	<br>
-	<p>choose detect mode:</p>
-	<input type="button" value="head turn" onclick="">
-	<div></div>
-	<button class="big-button" type="button" onclick="init()">start</button>
-	<div id="webcam-container"></div>
-	<div id="label-container"></div>
+		<button class="big-button" type="button" onclick="init()">start</button>
+		<div id="webcam-container"></div>
+		<div id="label-container"></div>	
+	</div>
+	
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 	<!-- 1. Write your HTML code below: -->
 
 
 	<script type="text/javascript">
-		let URL = "";
+		let URL = "https://teachablemachine.withgoogle.com/models/tzVz-R_qT/";
 		// 2. Write your JavaScript below:
-		function selectDetect(type) {
-			if (type == "eyes") {
-				URL = "model images/image-model-eyes/"
-			} else if (type == "head") {
-				URL = "model images/image-model-head/"
-			}
-		}
 
 		function hide() {
 
